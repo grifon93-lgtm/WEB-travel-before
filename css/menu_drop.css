@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*レスポンシブ時のメニューボタンの設定*/
+
+.trigger {
+	display: none;
+}
+
+
+/*responsive時*/
+.trigger span::before {
+	text-align: center;
+	font-size: 140%;
+	font-weight: bold;
+	content: 'MENU';
+	color: #ff4500;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .trigger {
+        display: block;
+    }
+    .trigger.active  span::before {
+	content: 'CLOSE';
+    }
+    .navBg {
+        display:none;
+        transition: 0.4s ease-out;
+    }
+    nav {
+        transform: translateX(600px);
+        transition: 0.2s ease-out;
+    }
+    nav.active {
+        display: block;
+        transform: translateX(0);
+        transition: 0.2s ease-out;
+    }
+    .navBg.active {
+        display: block;
+        transition: 0.4s ease-out;
+    }
+}

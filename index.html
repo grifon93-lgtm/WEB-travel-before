@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>OrangeJam｜アジアの旅プレゼント</title>
+		<meta name="keywords" content="旅行,プレゼント,アジア">
+		<meta name="description" content="台湾、香港、バリ。美味しいアジアの旅をプレゼント！">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico">
+
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/menu_drop.css" rel="stylesheet">
+		<link href="slide/jquery.bxslider.css" rel="stylesheet">
+
+	</head>
+	<body>
+	<div id="container">
+		<header>
+			<div class="title_box">
+			<div class="headline_box">
+				<h1>OrangeJam Travel</h1>
+				<h2>アジアの旅プレゼント</h2>
+			</div><!--headline_box-->
+			<h3><img src="images/orange.png" alt="logo"></h3>
+			</div><!--title_box>-->
+			<div class="bx-wrapper">
+				<ul class="bxslider">
+					<li><img src="slideImage/angkor_wat02.jpg" alt="アンコールワット"></li>
+					<li><img src="slideImage/blue_mosk02.jpg" alt="ブルーモスク"></li>
+					<li><img src="slideImage/hongkong02.jpg" alt="香港"></li>
+					<li><img src="slideImage/mainvisual03.jpg" alt="プルメリア"></li>
+				</ul>
+			</div><!--bx-wrapper-->
+			<div class="navBg"></div><!--navBg-->
+			<div class="trigger">
+				<p class="trigger_btn"><img src="images/orange.png" alt="logo"></p>
+				<span></span>
+			</div><!--trigger-->
+			<nav>
+				<ul>
+				<li><a href="index.html">Top</a></li>
+				<li><a href="country.html">アジアンSpot</a></li>
+				<li><a href="entry.html">プレゼント応募フォーム</a></li>
+				<li><a href="company.html">会社案内</a></li>
+				<!--li><a href="http://www.c-aca.com" target="_blank">クリアカ・トラベル</a></li-->
+				</ul>
+			</nav>
+		</header>
+	<div id="catch">
+		<p>OrangeJam Travelから、毎月抽選でペア3組6名様に「<b>美味しいアジアの旅</b>」をプレゼント！</p>
+	</div>
+<div class="content_box">
+<div class="present">	
+<h2>プレゼント内容</h2>
+	<div class="present_box">
+	<section id="bari">
+		<h3>バリ5日間<br>南国のフルーツとバリご飯の旅</h3>
+		<figure>
+		<a href="bali.html"><img src="images/bali.jpg" alt="バリ島ケチャ"></a>
+		<figcaption>バリ伝統のダンス「ケチャ」</figcaption>
+		</figure>
+		<p>ガムランの響きと、バリの伝統的な踊りケチャを鑑賞できる、「美味しい」だけじゃない神秘的な旅。</p>
+	</section>
+	<section id="taipei">
+		<h3>台湾4日間<br>本場の小籠包と夜市をめぐる旅</h3>
+		<figure>
+		<img src="images/taiwan.jpg" alt="台湾小籠包" id="taiwan">
+		<figcaption>台湾名物の小籠包</figcaption>
+		</figure>
+		<p>台湾といえば日本でも大人気の小籠包の本場。有名なお店の小籠包食べ放題と、台北一番の夜市を堪能するグルメ旅。</p>
+	</section>
+	<section>
+		<h3>香港＆マカオ4日間<br>本格飲茶と100万ドルの夜景を楽しむ旅</h3>
+		<figure>
+		<img src="images/hongkong.jpg" alt="香港市街地">
+		<figcaption>香港島の街並み</figcaption>
+		</figure>
+		<p>アジアの街並みに所狭しと走る二階建てバス。本格飲茶を堪能したあとは、夜景を楽しむロマンチックな旅。</p>
+	</section>
+</div><!--present_box-->
+</div><!--present-->
+
+<div id="country">
+		<h2>ピックアップ</h2>
+		<ul>
+            <li><img src="images/kl.jpg" alt=""></li>
+            <li><img src="images/bangkok.jpg" alt=""></li>
+            <li><img src="images/pink_mosque.jpg" alt=""></li>
+			<li><img src="images/hoian.jpg" alt=""></li>
+            <li><img src="images/angkor_wat.jpg" alt=""></li>
+            <li><img src="images/thai.jpg" alt=""></li>
+		</ul>
+		<p>他にも東南アジアの「美味しい旅」を用意しております</p>
+</div><!--country-->
+</div><!--content_box-->
+<p class="gotop"><img src="images/gotop.png"></p>
+<footer>
+	<ul>
+		<li><a href="#">プライバシーポリシー</a></li>
+		<li><a href="#">会社案内</a></li>
+		<li><a href="#">お問合わせ</a></li>
+	</ul>
+	<p>&copy;OrangeJam Travel. All Right Reserved. 2016</p>
+</footer>
+</div><!--container-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="slide/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				auto: true,
+				mode: 'fade',
+				infiniteLoop: true,
+				controls: false,
+				speed: 600,
+				pause: 3000,
+				touchEnabled: false,
+			});
+
+		});
+	</script>
+<script src="js/gotop.js"></script>
+<script src="js/menu_drop.js"></script>
+</body>
+</html>

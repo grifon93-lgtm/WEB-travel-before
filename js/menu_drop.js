@@ -1,0 +1,9 @@
+/*menu_dropの設定*/
+/*jQueryの発動*/
+$(document).ready(function(){
+    $('.trigger').click(function(){
+        $(this).toggleClass('active');
+        $('nav').toggleClass('active');
+        $('.navBg').toggleClass('active');
+    });
+});

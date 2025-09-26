@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="旅行,プレゼント,アジア">
+<meta name="description" content="台湾、香港、バリ。美味しいアジアの旅をプレゼント！">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アジアの旅プレゼント</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/menu_drop.css" rel="stylesheet">
+<link href="slide/jquery.bxslider.css" rel="stylesheet">
+
+
+<link href="favicon.ico" rel="icon">
+</head>
+
+<body>
+<div id="container">
+<header>
+	<div class="title_box">
+        <div class="headline_box">
+            <h1>OrangeJam Travel</h1>
+            <h2>東南アジアの旅</h3>
+        </div><!--headline_box-->
+        <h3><img src="images/orange.png" alt="OrangeJam"></h2>
+    </div><!--title_box-->
+    <div class="trigger">
+		<p class="trigger_btn"><img src="images/orange.png" alt="logo"></p>
+		<span></span>
+	</div><!--trigger-->
+    <div class="bx-wrapper">
+		<ul class="bxslider">
+			<li><img src="slideImage/angkor_wat02.jpg" alt="アンコールワット"></li>
+			<li><img src="slideImage/blue_mosk02.jpg" alt="ブルーモスク"></li>
+			<li><img src="slideImage/hongkong02.jpg" alt="香港"></li>
+			<li><img src="slideImage/mainvisual03.jpg" alt="プルメリア"></li>
+		</ul>
+	</div><!--bx-wrapper-->
+    <nav>
+    <ul>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="#">アジアンSpot</a></li>
+        <li><a href="entry.html">プレゼント応募フォーム</a></li>
+        <li><a href="#">会社案内</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content_box">
+    <section id="entry">
+        <h2>プレゼント応募</h2>
+        <form action="present.php" method="post">
+
+        <table>
+            <tr>
+                <th>応募する旅</th>
+                <td>
+                <input type="radio" name="present" id="bali"><label for="bali">バリ島</label>
+                <input type="radio" name="present" id="taiwan"><label for="taiwan">台湾</label>
+                <input type="radio" name="present" id="hongkong"><label for="hongkong">香港</label>
+                </td>
+            </tr>
+            <tr>
+                <th>お名前</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>性別</th>
+                <td>
+                <input type="radio" name="sex" value="man" id="man"><label for="man">男性</label>
+                <input type="radio" name="sex" value="woman" id="woman"><label for="woman">女性</label>
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td><input type="email" name="mail"></td>
+            </tr>
+            <tr>
+                <th>このサイトをどこで知りましたか？</th>
+                <td>
+                <input type="checkbox" id="search" name="media"><label for="search">検索サイト</label>
+                <input type="checkbox" id="magazine" name="media"><label for="magazine">雑誌</label>
+                <input type="checkbox" id="friend" name="media"><label for="friend">友達の紹介</label>
+                <input type="checkbox" id="other" name="media"><label for="other">その他</label>
+                </td>
+            </tr>
+            <tr>
+                <th>ご意見ご感想</th>
+                <td><textarea name="comment">このサイトに対するご意見をお書きください</textarea></td>
+            </tr>
+        </table>
+        <p><input type="submit"></p>
+        </form>
+    </section>
+</div><!--content_box-->
+<div class="gotop">
+    <p><img src="images/gotop.png"></P>
+</div><!--gotop-->
+<footer>
+    <ul>
+    <li><a href="#">プライバシーポリシー</a></li>
+    <li><a href="#">会社案内</a></li>
+    <li><a href="#">お問合わせ</a></li>
+    <li><a href="#">このサイトについて</a></li>
+    </ul>
+    <p>&copy; OrangeJam Travel. All Right Reserved. 2016</p>
+</footer>
+</div><!--/container-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="slide/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				auto: true,
+				mode: 'fade',
+				infiniteLoop: true,
+				controls: false,
+				speed: 600,
+				pause: 3000,
+				touchEnabled: false,
+			});
+		});
+	</script>
+<script src="js/gotop.js"></script>
+<script src="js/menu_drop.js"></script>
+</body>
+</html>
